@@ -1,0 +1,100 @@
+#nav{
+
+	left: 10px;
+	
+}
+
+.brand-logo{
+	font-family: lucida;
+	margin-left: 25px;
+}
+
+.cor{
+	max-height: 300px;
+	width: 100%;
+	background-color:black;
+	background-position: fixed;
+	opacity: 0.8;
+	margin-top: 3px;
+}
+
+.cor .carousel{
+	padding-top: 2px;
+	padding-bottom: 5px;
+	max-height: 250px;
+	position: relative;
+	filter: blur;
+}
+.cor .carousel img{
+	height: 200px;
+	width: 200px;
+}
+.search{
+	margin-top:10px;
+}
+
+.contents.col.recipes .left{
+	border-radius: 50%;
+	max-height: 50px;
+	max-width: 50px;
+}
+
+#contents{
+	margin: left:0px;
+}
+
+.recipes{
+	position: relative;
+	border-radius: 5px;
+
+}
+
+#left-image{
+	float: left;
+	margin-left: 5px;
+}
+
+#recipes-info{
+	margin-left: 10px;
+	position: relative;
+
+}
+
+#recipes-info h5{
+	text-align: center;
+	font-family: monospace;
+	font-weight: bold;
+}
+
+#recipes-info h6{
+	text-align: left;
+	font-family:sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+#paragraph{
+	color: blue;
+	font-family: times;
+	max-width: 50px;
+}
+#hoverMe{
+	display: none;
+}
+.recipes:hover #hoverMe{
+	display: inline-block;
+}
+
+.overFlow{
+	overflow-y:auto; 
+	overflow-x:hidden; 
+	height:400px;
+}
+@media only screen and (max-width: 600px){
+	#paragraph{
+		font-size: 10px;
+		font-family: arial;
+	}
+
+}
