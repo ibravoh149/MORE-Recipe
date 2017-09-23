@@ -16,6 +16,10 @@ body{
 	color: purple;
 	
 }
+.dropdown-content li a{
+	font-size: 10px;
+	color: black;
+}
 
 .brand-logo{
 	font-family: lucida;
@@ -342,4 +346,8 @@ body{
 .your-recipes h4{
 	text-align: center;
 	font-family: monospace;
+}
+
+.rounded{
+	border-radius: 100%;
 }
