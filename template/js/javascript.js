@@ -6,4 +6,10 @@ $( document ).ready(function(){
 
 
 	  $('.modal').modal();
+
+
+	  //document.getElementById('signup').addEventListener('click', ()=>{
+	  	//	window.location.href ='dashboard.html';
+	  //});
+
 });
