@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" type="text/css" href="css/index.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+    <!--navigation-->
+    <nav id="nav">
+    <!--nav wrap-->
+        <div class="nav-wrapper purple darken-4" id="wrap">
+            <a href="all.html" class="brand-logo">MORE-Recipe</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+
+              <li><a class='dropdown-button btn purple darken-4' href='#' data-activates='dropdown1'><i class= "material-icons">menu</i>
+              </a></a></li>
+                <li><a href="#!user"><img class="circle user-image z-depth-3" src="images/ketchup.jpeg"></a></li>
+                <li class="deep-purple-text darken-2"><a href="add.html"><i class="material-icons">add</i> Add Recipe</a></li>
+                <li><a href="favourite.html">Favourite</a></li>
+
+            </ul>
+            <!--nav wrap-->
+
+            <!--dropdwon list-->
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="#!">John Smith</a></li>
+              <li><a href="#!">Johndenerys<br>@gmail.com</a></li>
+              <li class="divider"></li>
+              <li><a href="profile.html">View Profile</a></li>
+               <li><a href="signup.html">Sign Out</a></li>
+            </ul>
+            <!--dropdown list-->
+
+            <!--mobile view list-->
+            <ul class="side-nav purple darken-4" id="mobile-demo">
+               <li>
+                <div class="user-view">
+                  <div class="background">
+                     <img src="images/office.jpg">
+                  </div>
+                    <a href="#!user"><img class="circle" src="images/ketchup.jpeg"></a>
+                    <a href="#!name"><span class="white-text name">John Smith</span></a>
+                    <a href="#!email"><span class="white-text email">Johndenerys@gmail.com</span></a>
+                </div>
+              </li>
+              <li><a href="add.html" class="waves-effect"><i class="material-icons">add</i>Add Recipe</a></li>
+              <li><a class="waves-effect" href="favourite.html">Favourite</a></li>
+              <li><div class="divider"></div></li>
+              <li><a class="waves-effect" href="profile.html">View Profile</a></li>
+              <li><a class="waves-effect" href="signup.html">Sign Out</a></li>
+            </ul>
+            <!--mobile view list-->
+        </div>
+  </nav>
+
+  <!--body-->
+  <div class="row">
+    <div class="col m6">
+        <ul class="collection">
+        <li class="collection-item avatar">
+        <h5>Spaghetti Code</h5>
+        <span style="font-style: italic;">A Recipe by:</span>
+          <span class="title" style="font-family: monospace;font-weight:bolder;font-size: 30px;">Fabulous Foods</span>
+          <hr>
+          <p>"idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igit"</p>
+        </li>
+        <li class="collection-item avatar">
+          <h5>Ingredients</h5>
+          <hr>
+          <ul>
+            <li><span class="bg badge">1</span>pack of spaghetti</li>
+            <li><span class="bg badge">1</span>pressure cooker</li>
+            <li><span class="bg badge">4</span>nescio quae</li>
+            <li><span class="bg badge">3</span>nescio quae</li>
+            <li><span class="bg badge">7</span>nescio quae</li>
+          </ul>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle purple">play_arrow</i>
+           <h5>Directions</h5>
+           <hr>
+            <p>Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.</p>
+          </li>
+          <li>
+          <ul>
+            <li><i class="material-icons yellow">star_border</i><span class="emphasis">42 Reviews</span></li>
+             <li><i class="material-icons green">thumb_up</i><span class="emphasis">15 Upvotes</span></li>
+             <li><i class="material-icons red">thumb_down</i><span class="emphasis">20 Downvotes</span></li>
+          </ul>
+        </li>
+      </ul> 
+    </div>
+
+    <div class="col m6">
+    <div id="setImage" class="z-depth-3">
+      <img src="images/spags.jpg">
+    </div><hr>
+      <div id="mightLike">
+        <h5 style="text-align: center;">You might also like</h5>
+        
+  
+          <div class="col"> 
+            <div class="recipes z-depth-1">
+              <div id="left-image">
+                <img src="images/shawama.jpeg" style="height:100px; width:100px;" class="responsive">
+              </div>
+
+              <div id="recipes-info">
+                <h5>WOW</h5>
+                <h6>Description</h6>
+                <p><span id="paragraph">Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.</span></p>
+                <a href="recipe-Detail.html" id ="hoverMe" class="waves-effect waves-light btn purple darken-4"><i class="material-icons left">info</i>View More</a>
+              </div>
+            </div> 
+          </div>
+
+          <div class="col"> 
+            <div class="recipes z-depth-1">
+              <div id="left-image">
+                <img src="images/ketchup.jpeg" style="height:100px; width:100px;" class="responsive">
+              </div>
+
+              <div id="recipes-info">
+                <h5>Murdered Chips</h5>
+                <h6>Description</h6>
+                <p><span id="paragraph">Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.</span></p>
+                <a href="recipe-Detail.html" id ="hoverMe" class="waves-effect waves-light btn purple darken-4"><i class="material-icons left">info</i>View More</a>
+              </div>
+            </div> 
+          </div>
+
+          <div class="col"> 
+            <div class="recipes z-depth-1">
+              <div id="left-image">
+                <img src="images/salmon.jpeg" style="height:100px; width:100px;" class="responsive">
+              </div>
+
+              <div id="recipes-info">
+                <h5>Toasted Beef</h5>
+                <h6>Description</h6>
+                <p><span id="paragraph">Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.</span></p>
+                <a href="recipe-Detail.html" id ="hoverMe" class="waves-effect waves-light btn purple darken-4"><i class="material-icons left">info</i>View More</a>
+              </div>
+            </div> 
+          </div>
+
+      </div>
+    </div>
+  </div>
+  <!--reviews-->
+
+  <span style="float: left;">Reviews</span>
+  <span class="review-message"><a href="#modal1" class="btn waves-effect modal-trigger"><i class="material-icons">star</i></a></span>
+  <span class="review-message"><a href="" class="btn waves-effect green"><i class="material-icons">thumb_up</i></a></span>
+  <span class="review-message"><a href="#" class="btn waves-effect red"><i class="material-icons">thumb_down</i></a></span>
+  <hr style="clear: both;">
+
+<!--modal for review-->
+  <div id="modal1" class="modal modal-fixed-footer">
+   <form method="POST"  action="">
+    <div class="modal-content">
+     <div class="input-field col s6">
+          <i class="material-icons prefix">edit</i>
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">Title</label>
+      </div>
+      <div class="input-field col s6">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+          <label for="icon_prefix2">Review</label>
+        </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat "><i class="material-icons waves-green">send</i></a>
+    </div>
+    </form>
+  </div>
+  <!--modal for review-->
+
+
+  <!--review section-->
+
+  <div class="review-flex container">
+    <div class="review z-depth-3">
+     <div class="review-box">
+         <div class="z-depth-3" id = "box-review">
+          <img src="images/salmon.jpeg" class="circle z-depth-3">
+        </div>
+
+        <div class="a-review">
+          <h6>Andela Cooks <span style="font-style: italic;font-weight: lighter; font-family: sans-serif;font-size: 15px; color: black;">wrote:</span></h6>
+          <span class="review-title">Amazing Read</span>
+            <p>Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.</p>
+        </div>
+    </div>
+   </div>
+
+   <div class="review z-depth-3">
+     <div class="review-box">
+         <div class="z-depth-3" id = "box-review">
+          <img src="images/salmon.jpeg" class="circle z-depth-3">
+        </div>
+
+        <div class="a-review">
+          <h6>Andela Cooks <span style="font-style: italic;font-weight: lighter; font-family: sans-serif;font-size: 15px; color: black;">wrote:</span></h6>
+           <span class="review-title">Great Recipe</span>
+            <p>Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.</p>
+        </div>
+    </div>
+   </div>
+
+   <div class="review z-depth-3">
+     <div class="review-box">
+         <div class="z-depth-3" id = "box-review">
+          <img src="images/salmon.jpeg" class="circle z-depth-3">
+        </div>
+
+        <div class="a-review">
+          <h6>Andela Cooks <span style="font-style: italic;font-weight: lighter; font-family: sans-serif;font-size: 15px; color: black;">wrote:</span></h6>
+           <span class="review-title">Amazing Read</span>
+            <p>Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.</p>
+        </div>
+    </div>
+   </div>
+
+   <div class="review z-depth-3">
+     <div class="review-box">
+         <div class="z-depth-3" id = "box-review">
+          <img src="images/salmon.jpeg" class="circle z-depth-3">
+        </div>
+
+        <div class="a-review">
+          <h6>Andela Cooks <span style="font-style: italic;font-weight: lighter; font-family: sans-serif;font-size: 15px; color: black;">wrote:</span></h6>
+           <span class="review-title">Amazing Read</span>
+            <p>Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.</p>
+        </div>
+    </div>
+   </div>
+   <div class="clear"></div>
+  </div>
+  <!--review section-->
+ 
+
+  <!--body ends-->
+
+  <!--footer-->
+   <footer class="page-footer purple darken-4">
+            <div class="row">
+               <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">About Us</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">News Room</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Jobs at More-Recipe</a></li>
+                </ul>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Support</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Site Map</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Contact us</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Customer Support</a></li>
+                </ul>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Advertisement</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Advertise with Us</a></li>
+                </ul>
+              </div>
+            </div>
+          <div class="footer-copyright">
+              <div class="container">
+              © 2017 More-Recipe.
+              </div>
+            </div>
+        </footer>
+  <!--footer-->
+     <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src = "js/javascript.js"></script>
+    </body>
+ </html>
