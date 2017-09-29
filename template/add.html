@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" type="text/css" href="css/index.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+    <!--navigation-->
+    <nav id="nav">
+    <!--nav wrap-->
+        <div class="nav-wrapper purple darken-4" id="wrap">
+            <a href="all.html" class="brand-logo">MORE-Recipe</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+
+              <li><a class='dropdown-button btn purple darken-4' href='#' data-activates='dropdown1'><i class= "material-icons">menu</i>
+              </a></li>
+                <li><a href="#!user"><img class="circle user-image z-depth-3" src="images/ketchup.jpeg"></a></li>
+                <li class="deep-purple-text darken-2"><a href="add.html"><i class="material-icons">add</i>Add Recipe</a></li>
+                <li><a href="Favourite.html">Favourite</a></li>
+            </ul>
+            <!--nav wrap-->
+
+            <!--dropdwon list-->
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="#!">John Smith</a></li>
+              <li><a href="#!">Johndenerys<br>@gmail.com</a></li>
+              <li class="divider"></li>
+              <li><a href="profile.html">View Profile</a></li>
+            </ul>
+            <!--dropdown list-->
+
+            <!--mobile view list-->
+            <ul class="side-nav purple darken-4" id="mobile-demo">
+               <li>
+                <div class="user-view">
+                  <div class="background">
+                     <img src="images/office.jpg">
+                  </div>
+                    <a href="#!user"><img class="circle" src="images/ketchup.jpeg"></a>
+                    <a href="#!name"><span class="white-text name">John Smith</span></a>
+                    <a href="#!email"><span class="white-text email">Johndenerys@gmail.com</span></a>
+                </div>
+              </li>
+              <li><a href="add.html" class="waves-effect"><i class="material-icons">add</i>Add Recipe</a></li>
+              <li><a class="waves-effect" href="Favourite.html">Favourite</a></li>
+              <li><div class="divider"></div></li>
+              <li><a class="waves-effect" href="profile.html">View Profile</a></li>
+            </ul>
+            <!--mobile view list-->
+        </div>
+  </nav><!--nav wrap-->
+
+  <!--content-->
+
+  <div class="container">
+   <h4>Add Your Recipes</h4>
+   <div class="add-div z-depth-1">
+     <div class="row">
+      <form class="col s12">
+        <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">edit</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">Title</label>
+            </div>
+
+            <div class="input-field col s6">
+             <i class="material-icons prefix">favorite_border</i>
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Description</label>
+            </div>
+
+            <div class="input-field col s6">
+              <i class="material-icons prefix">list</i>
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Ingredients</label>
+            </div>
+
+            <div class="file-field input-field col s6">
+              <div class="btn purple darken-4">
+                <span>Add Image</span>
+                <input type="file">
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+              </div>
+           </div>
+
+            <div class="input-field col s12">
+              <i class="material-icons prefix">directions</i>
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Direction</label>
+            </div>
+        </div>
+         <button type="submit" class="btn col s3 purple darken-4" name=""><i class="material-icons">add</i></button>
+      </form>
+    </div>
+    </div>
+  </div>
+
+
+  
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+           <div class="row">
+      <form class="col s12">
+        <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">edit</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">Title</label>
+            </div>
+
+            <div class="input-field col s6">
+             <i class="material-icons prefix">favorite_border</i>
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Description</label>
+            </div>
+
+            <div class="input-field col s6">
+              <i class="material-icons prefix">list</i>
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Ingredients</label>
+            </div>
+
+            <div class="file-field input-field col s6">
+              <div class="btn purple darken-4">
+                <span>Add Image</span>
+                <input type="file">
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+              </div>
+           </div>
+
+            <div class="input-field col s12">
+              <i class="material-icons prefix">directions</i>
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Direction</label>
+            </div>
+        </div>
+      </form>
+    </div>
+    </div>
+    <div class="modal-footer">
+       <button type="submit" class="btn col s3 purple darken-4" name=""><i class="material-icons">add</i></button>
+    </div>
+  </div>
+
+  <hr>
+  <div class="your-recipes">
+  <h4>All my Recipes</h4><hr>
+    <div class="row">
+      <div class="col m3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/ketchup.jpeg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Murdered Potatoe<i class="material-icons right">more_vert</i></span>
+            <ul>
+              <li><i class="material-icons waves-light">thumb_up</i>3 Upvotes</li>
+               <li><i class="material-icons waves-light">thumb_down</i>8 Downvotes</li>
+                <li><i class="material-icons waves-light">grade</i>10 Reviews</li>
+            </ul>
+            <span class="col s3 btn rounded purple darken-4"><a class="waves-effect waves-light modal-trigger" href="#modal1"><i class="material-icons">edit</i></a></span>
+            <span class="col s6"></span>
+            <span class="col s3 btn rounded purple darken-4"><i class="material-icons">delete</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Murdered Potatoe<i class="material-icons right">close</i></span>
+            <div id="ingredients">
+            <h5>Ingredients:</h5>
+              <ul>
+                <li>esse, alterum cum voluptate.</li>
+                 <li>esse, alterum cum voluptate.</li>
+                  <li>esse, alterum cum voluptate.</li>
+                   <li>esse, alterum cum voluptate.</li>
+              </ul>
+            </div>
+            <div id="directions">
+             <h5>Directions:</h5> 
+                <p>Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="col m3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/ketchup.jpeg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Murdered Potatoe<i class="material-icons right">more_vert</i></span>
+            <ul>
+              <li><i class="material-icons waves-light">thumb_up</i>3 Upvotes</li>
+               <li><i class="material-icons waves-light">thumb_down</i>8 Downvotes</li>
+                <li><i class="material-icons waves-light">grade</i>10 Reviews</li>
+            </ul>
+           <span class="col s3 btn rounded purple darken-4"><a class="waves-effect waves-light modal-trigger" href="#modal1"><i class="material-icons">edit</i></a></span>
+            <span class="col s6"></span>
+            <span class="col s3 btn rounded purple darken-4"><i class="material-icons">delete</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Murdered Potatoe<i class="material-icons right">close</i></span>
+            <div id="ingredients">
+            <h5>Ingredients:</h5>
+              <ul>
+                <li>esse, alterum cum voluptate.</li>
+                 <li>esse, alterum cum voluptate.</li>
+                  <li>esse, alterum cum voluptate.</li>
+                   <li>esse, alterum cum voluptate.</li>
+              </ul>
+            </div>
+            <div id="directions">
+             <h5>Directions:</h5> 
+                <p>Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="col m3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/ketchup.jpeg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Murdered Potatoe<i class="material-icons right">more_vert</i></span>
+            <ul>
+              <li><i class="material-icons waves-light">thumb_up</i>3 Upvotes</li>
+               <li><i class="material-icons waves-light">thumb_down</i>8 Downvotes</li>
+                <li><i class="material-icons waves-light">grade</i>10 Reviews</li>
+            </ul>
+           <span class="col s3 btn rounded purple darken-4"><a class="waves-effect waves-light modal-trigger" href="#modal1"><i class="material-icons">edit</i></a></span>
+            <span class="col s6"></span>
+            <span class="col s3 btn rounded purple darken-4"><i class="material-icons">delete</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Murdered Potatoe<i class="material-icons right">close</i></span>
+            <div id="ingredients">
+            <h5>Ingredients:</h5>
+              <ul>
+                <li>esse, alterum cum voluptate.</li>
+                 <li>esse, alterum cum voluptate.</li>
+                  <li>esse, alterum cum voluptate.</li>
+                   <li>esse, alterum cum voluptate.</li>
+              </ul>
+            </div>
+            <div id="directions">
+             <h5>Directions:</h5> 
+                <p>Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="col m3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/ketchup.jpeg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Murdered Potatoe<i class="material-icons right">more_vert</i></span>
+            <ul>
+              <li><i class="material-icons waves-light">thumb_up</i>3 Upvotes</li>
+               <li><i class="material-icons waves-light">thumb_down</i>8 Downvotes</li>
+                <li><i class="material-icons waves-light">grade</i>10 Reviews</li>
+            </ul>
+            <span class="col s3 btn rounded purple darken-4"><i class="material-icons">edit</i></span>
+            <span class="col s6"></span>
+            <span class="col s3 btn rounded purple darken-4"><i class="material-icons">delete</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Murdered Potatoe<i class="material-icons right">close</i></span>
+            <div id="ingredients">
+            <h5>Ingredients:</h5>
+              <ul>
+                <li>esse, alterum cum voluptate.</li>
+                 <li>esse, alterum cum voluptate.</li>
+                  <li>esse, alterum cum voluptate.</li>
+                   <li>esse, alterum cum voluptate.</li>
+              </ul>
+            </div>
+            <div id="directions">
+             <h5>Directions:</h5> 
+                <p>Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="col m3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/ketchup.jpeg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Murdered Potatoe<i class="material-icons right">more_vert</i></span>
+            <ul>
+              <li><i class="material-icons waves-light">thumb_up</i>3 Upvotes</li>
+               <li><i class="material-icons waves-light">thumb_down</i>8 Downvotes</li>
+                <li><i class="material-icons waves-light">grade</i>10 Reviews</li>
+            </ul>
+            <span class="col s3 btn rounded purple darken-4"><i class="material-icons">edit</i></span>
+            <span class="col s6"></span>
+            <span class="col s3 btn rounded purple darken-4"><i class="material-icons">delete</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Murdered Potatoe<i class="material-icons right">close</i></span>
+            <div id="ingredients">
+            <h5>Ingredients:</h5>
+              <ul>
+                <li>esse, alterum cum voluptate.</li>
+                 <li>esse, alterum cum voluptate.</li>
+                  <li>esse, alterum cum voluptate.</li>
+                   <li>esse, alterum cum voluptate.</li>
+              </ul>
+            </div>
+            <div id="directions">
+             <h5>Directions:</h5> 
+                <p>Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+
+
+ 
+  <!--content-->
+
+
+  <!--footer-->
+   <footer class="page-footer purple darken-4">
+            <div class="row">
+               <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">About Us</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">News Room</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Jobs at More-Recipe</a></li>
+                </ul>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Support</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Site Map</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Contact us</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Customer Support</a></li>
+                </ul>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Advertisement</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Advertise with Us</a></li>
+                </ul>
+              </div>
+            </div>
+          <div class="footer-copyright">
+              <div class="container">
+              © 2017 More-Recipe.
+              </div>
+            </div>
+        </footer>
+  <!--footer-->
+
+   <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src = "js/javascript.js"></script>
+    </body>
+ </html>

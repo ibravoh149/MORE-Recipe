@@ -1,0 +1,354 @@
+
+/*styles for index page starts here*/
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+	padding :0;
+	margin: 5px;
+	background-color:#fafafa;
+}
+
+#nav{
+
+	left: 10px;
+	color: purple;
+	
+}
+.dropdown-content li a{
+	font-size: 10px;
+	color: black;
+}
+
+.brand-logo{
+	font-family: lucida;
+	margin-left: 25px;
+}
+
+.cor{
+	max-height: 300px;
+	width: 100%;
+	background-color:black;
+	background-position: fixed;
+	opacity: 0.8;
+	margin-top: 3px;
+}
+
+.cor .carousel{
+	padding-top: 2px;
+	padding-bottom: 5px;
+	max-height: 250px;
+	position: relative;
+	filter: blur;
+}
+.cor .carousel img{
+	height: 200px;
+	width: 200px;
+}
+.search{
+	margin-top:10px;
+}
+
+.contents.col.recipes .left{
+	border-radius: 50%;
+	max-height: 50px;
+	max-width: 50px;
+}
+
+#contents{
+	margin: left:0px;
+	width: 100%;
+}
+
+.recipes{
+	position: relative;
+	border-radius: 5px;
+
+}
+
+#left-image{
+	float: left;
+	margin-left: 5px;
+}
+
+#recipes-info{
+	margin-left: 10px;
+	position: relative;
+
+}
+
+#recipes-info h5{
+	text-align: center;
+	font-family: monospace;
+	font-weight: bold;
+}
+
+#recipes-info h6{
+	text-align: left;
+	font-family:sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+#paragraph{
+	color: blue;
+	font-family: times;
+	max-width: 50px;
+}
+#hoverMe{
+	display: none;
+	transition: 0.5s ease-in-out;
+}
+.recipes:hover #hoverMe{
+	display: inline-block;
+}
+
+.overFlow{
+	overflow-y:auto; 
+	overflow-x:hidden; 
+	height:400px;
+}
+#footer{
+	display: flex;
+	min-height:100px;
+	color: white;
+}
+
+.left-content{
+	text-align: left;
+	float: left;
+	padding: 15px;
+	width: 33.33%;
+}
+
+.center-content{
+	float :left;
+	padding: 15px;
+	width: 33.33%;
+	text-align:center;
+}
+
+.right-content{
+	float: left;
+	width: 33.33%;
+	padding: 15px;
+	text-align: right;
+}
+
+
+@media only screen and (max-width: 600px){
+	#paragraph{
+		font-size: 10px;
+		font-family: arial;
+	}
+	.center-content{
+		width: 100%;
+	}
+	.center-content{
+		width: 100%;
+	}
+	.right-content{
+		width: 100%;
+	}
+
+	.collection{
+		font-size: 10px;
+	}
+
+	.collection h4, h5{
+		font-size: 20px;
+	}
+	.a-review p{
+		font-size: 10px;
+	}
+	.review-message{
+		font-size: 10px;
+	}
+
+}/*styles for index page ends here*/
+
+
+/*styles for recipes details page starts here    purple darken-4*/
+
+
+.bg{
+	color: white;
+	height: 5px;
+	width: 10px;
+	border-radius: 100%;
+	background-color:#006064;
+}
+#setImage{
+	margin-top: 10px;
+}
+#setImage img{
+	
+	width: 100%;
+	height: 250px;
+}
+#mightLike{
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 450px;
+}
+.emphasis{
+	font-style: italic;
+	font-weight: lighter;
+}
+.review{
+	border-radius: 5px;
+	max-height:auto;
+}
+.a-review h6{
+	margin-left: 80px;
+	color: blue;
+	font-size: 30px;
+}
+.a-review p{
+	margin-left: 80px;
+	margin-top: 0px;
+	font-family: arial;
+	padding-bottom: 5px;
+	font-size: 13px;
+}
+.a-review .review-title{
+	margin-left: 15px;
+	font-weight:bold;
+}
+#box-review img{
+	height: 60px;
+	width: 60px;
+	margin-left: 2px;
+	float: left;
+}
+.review-message{
+	float: right;
+	font-style: italic;
+}
+.clear{
+	clear: both;
+}
+.review-box{
+	padding-top: 5px;
+	margin-left: 5px;
+}
+.review-flex{
+	overflow-y: scroll;
+	height:500px;
+}
+.user-image{
+	height: 55px;
+	width: 55px;
+	margin-top: 3px;
+}
+/*styles for recipes details page ends here*/
+
+/*styles for favourite page starts here*/
+.myfavourites{
+	width: 100%;
+}
+#this-text{
+	text-align: center;
+	font-family: monospace;
+	font-size: 35px;
+	text-shadow: : 1px 2px blue;
+}
+/*styles for favourite page endss here*/
+
+/*stylles for profile starts here*/
+#image-div{
+	height: 250px;
+	width: 100%;
+	background-color: #333;
+	position: relative;
+	color: white;
+}
+
+#image-div img{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left:10px;
+	top:10px;
+	
+}
+#image-wrapper{
+	width: 220px;
+	height: 220px;
+	position: absolute;
+	left:20px;
+	top:90px;
+	background-color:#999;
+}
+
+#image-div h5{
+	position: absolute;
+	left: 250px;
+	top: 200px;
+	font-family: lucida;
+}
+#info{
+	padding-top: 30px;
+}
+#space{
+	height: 30px;
+}
+/*stylles for profile ends here*/
+
+
+.recipe-list{
+	background-color: #e8eaf6;
+	border-radius:10px;
+	border-width: solid;
+	max-width:inherit;
+	height: 50px;
+	width: 100%
+}
+
+.recipe-list img{
+	width:60px;
+	height: 60px;
+	border-radius: 100%;
+	position: relative;
+	left:20px;
+	top:-25px;
+}
+.recipe-list h6{
+	position: relative;
+	left: 100px;
+	bottom:70px;
+	font-family: fantasy;
+	font-weight: bolder
+}
+.res{
+	position: relative;
+	left: 100px;
+	bottom:65px;
+	font-family: times;
+}
+
+.add-div{
+	width: 75%;
+	height: auto;
+	margin: 0 auto;
+}
+.container h4{
+	font-family: monospace;
+	text-align: center;
+}
+.rounded{
+	border-radius: 10px;
+
+}
+
+.your-recipes h4{
+	text-align: center;
+	font-family: monospace;
+}
+
+.rounded{
+	border-radius: 100%;
+}
