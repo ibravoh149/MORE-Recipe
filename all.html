@@ -13,24 +13,58 @@
 
     <body>
     <!--navigation-->
-    	<nav id="nav">
-    <div class="nav-wrapper purple darken-4" id="wrap">
-      <a href="#!" class="brand-logo">MORE-Recipe</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li class="deep-purple-text darken-2"><a href="signup.html">SignUp</a></li>
-        <li><div>|</div></li>
-        <li><a href="signup.html">SignIn</a></li>
-      </ul>
-      <ul class="side-nav purple darken-4" id="mobile-demo">
-        <li ><a href="signup.html">SignUp</a></li>
-        <li class="divider deep-purple darken-2"></li>
-        <li><a href="signup.html">SignIn</a></li>
-      </ul>
-    </div>
+    	 <nav id="nav">
+    <!--nav wrap-->
+        <div class="nav-wrapper purple darken-4" id="wrap">
+            <a href="all.html" class="brand-logo">MORE-Recipe</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+
+              <li><a class='dropdown-button btn purple darken-4' href='#' data-activates='dropdown1'><i class= "material-icons">menu</i>
+              </a></a></li>
+                <li><a href="#!user"><img class="circle user-image z-depth-3" src="images/ketchup.jpeg"></a></li>
+                <li class="deep-purple-text darken-2"><a href="add.html"><i class="material-icons">add</i> Add Recipe</a></li>
+                <li><a href="favourite.html">Favourite</a></li>
+                 
+            </ul>
+            <!--nav wrap-->
+
+            <!--dropdwon list-->
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="#!">John Smith</a></li>
+              <li><a href="#!">Johndenerys<br>@gmail.com</a></li>
+              <li class="divider"></li>
+              <li><a href="profile.html">View Profile</a></li>
+              <li><a href="signup.html">Sign Out</a></li>
+            </ul>
+            <!--dropdown list-->
+
+            <!--mobile view list-->
+            <ul class="side-nav purple darken-4" id="mobile-demo">
+               <li>
+                <div class="user-view">
+                  <div class="background">
+                     <img src="images/office.jpg">
+                  </div>
+                    <a href="#!user"><img class="circle" src="images/ketchup.jpeg"></a>
+                    <a href="#!name"><span class="white-text name">John Smith</span></a>
+                    <a href="#!email"><span class="white-text email">Johndenerys@gmail.com</span></a>
+                </div>
+              </li>
+              <li><a href="add.html" class="waves-effect"><i class="material-icons">add</i>Add Recipe</a></li>
+              <li><a class="waves-effect" href="Favourite.html">Favourite</a></li>
+              <li><div class="divider"></div></li>
+              <li><a class="waves-effect" href="profile">View Profile</a></li>
+              <li><a class="waves-effect" href="signup.html">Sign Out</a></li>
+            </ul>
+            <!--mobile view list-->
+        </div>
   </nav>
+  <!--navigation end-->
+
+  <!--content begins here-->
+
   <!--navigation-->
-<h4 style="text-align: center;">Welcome To More-Recipe!</h4>
   <div class="cor z-depth-4">
   		<div class="carousel">
 		    <a class="carousel-item" href="#one!"><img src="images/fries.jpeg"></a>
@@ -66,7 +100,7 @@
 		  			<h5>Spaghetti Codes</h5>
 		  			<h6>Description</h6>
 		  			<p><span id="paragraph">Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.</span></p>
-		  			<a href="recipe-Detail.html" id ="hoverMe" class="waves-effect waves-light btn purple darken-4"><i class="material-icons left">info</i>View More</a>
+		  			<a href="dashboard.html" id ="hoverMe" class="waves-effect waves-light btn purple darken-4"><i class="material-icons left">info</i>View More</a>
 
 	  			</div>
 	  			
@@ -79,7 +113,7 @@
 		  			<h5>Spaghetti Codes</h5>
 		  			<h6>Description</h6>
 		  			<p><span id="paragraph">Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.</span></p>
-		  			<a href="recipe-Detail.html" id ="hoverMe" class="waves-effect waves-light btn purple darken-4"><i class="material-icons left">info</i>View More</a>
+		  			<a href="dashboard.html" id ="hoverMe" class="waves-effect waves-light btn purple darken-4"><i class="material-icons left">info</i>View More</a>
 
 	  			</div>
 	  			
@@ -92,7 +126,7 @@
 		  			<h5>Spaghetti Codes</h5>
 		  			<h6>Description</h6>
 		  			<p><span id="paragraph">Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.</span></p>
-		  			<a href="recipe-Detail.html" id ="hoverMe" class="waves-effect waves-light btn purple darken-4"><i class="material-icons left">info</i>View More</a>
+		  			<a href="dashboard.html" id ="hoverMe" class="waves-effect waves-light btn purple darken-4"><i class="material-icons left">info</i>View More</a>
 
 	  			</div>
 	  			
@@ -105,7 +139,7 @@
 		  			<h5>Spaghetti Codes</h5>
 		  			<h6>Description</h6>
 		  			<p><span id="paragraph">Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.</span></p>
-		  			<a href="recipe-Detail.html" id ="hoverMe" class="waves-effect waves-light btn purple darken-4"><i class="material-icons left">info</i>View More</a>
+		  			<a href="dashboard.html" id ="hoverMe" class="waves-effect waves-light btn purple darken-4"><i class="material-icons left">info</i>View More</a>
 
 	  			</div>
 	  			
@@ -122,7 +156,7 @@
 		  			<h5>Spaghetti Codes</h5>
 		  			<h6>Description</h6>
 		  			<p><span id="paragraph">Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Ille enim occurrentia nescio quae comminiscebatur; Unum est sine dolore esse, alterum cum voluptate. Hoc tu nunc in illo probas. Videamus igitur sententias eorum, tum ad verba redeamus.</span></p>
-		  			<a href="recipe-Detail.html" id ="hoverMe" class="waves-effect waves-light btn purple darken-4"><i class="material-icons left">info</i>View More</a>
+		  			<a href="dashboard.html" id ="hoverMe" class="waves-effect waves-light btn purple darken-4"><i class="material-icons left">info</i>View More</a>
 
 	  			</div>
 	  			
